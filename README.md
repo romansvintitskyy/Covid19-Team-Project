@@ -7,7 +7,7 @@
 
 ## Overview
 ### Description
-Tracks the current number of Covid19 cases in each state using a public API and a travel advice based on the number of the caes. We are considering extending the features to also show current local Covid19 related restrictions.
+Tracks the current number of Covid19 cases in each state using a public API and a travel advice based on the number of the caes. We are considering extending the features to also show current local Covid19 related restrictions and other news.
 
 ### App Evaluation
 - **Category:** Social Networking / Music
@@ -26,8 +26,10 @@ Tracks the current number of Covid19 cases in each state using a public API and 
 * When they tap on a state, it brings them to another screen with the data.
 
 ### 2. Screen Archetypes
-* Scrolling screen
+* Screen with news, states, prevention guidelines, and other statistics.
+* Scrolling screen with states
 * Screen with data
+
 
 
 ### 3. Navigation
@@ -38,3 +40,7 @@ Tracks the current number of Covid19 cases in each state using a public API and 
 
 **Flow Navigation** (Screen to Screen)
 * Scroll -> tap the state you'd like to know the data for -> another screen with the desired data shows up
+
+## Wireframes
+<img src="https://imgur.com/n62paka" width=800><br>
+

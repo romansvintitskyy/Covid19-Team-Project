@@ -42,5 +42,5 @@ Tracks the current number of Covid19 cases in each state using a public API and 
 * Scroll -> tap the state you'd like to know the data for -> another screen with the desired data shows up
 
 ## Wireframes
-<img src="https://imgur.com/n62paka" width=800><br>
+<img src="https://imgur.com/n62paka.jpg" width=800><br>
 

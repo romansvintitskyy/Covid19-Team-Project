@@ -62,3 +62,15 @@ Model: Row Entry
 
 - Country Data:
   - (Read/GET) Get the data for each country
+  
+  let query = PFQuery(className:"Row entry")
+query.whereKey("objectID")
+query.order(byDescending: "")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error {
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+      // TODO: Do something with posts...
+   }
+}

@@ -44,3 +44,10 @@ Tracks the current number of Covid19 cases in each state using a public API and 
 ## Wireframes
 <img src="https://imgur.com/n62paka.jpg" width=800><br>
 
+### 4. Schema
+
+Model: Row Entry
+Property	Type	       Description
+objectId	String	       unique id for the state/country name (default field)
+caseCount       Number         number of active Covid19 cases
+updatedAt	DateTime       date when post is last updated (default field)

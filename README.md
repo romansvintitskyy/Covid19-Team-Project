@@ -52,7 +52,7 @@ Model: Row Entry
 | caseCount  | Number | number of active Covid19 cases|
 | updatedAt| DateTime| date when post is last updated (default field)|
 
-### Networking
+### 5. Networking
 #### List of network requests by screen
 - Home Screen:
     - N/A

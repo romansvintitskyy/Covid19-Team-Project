@@ -48,7 +48,7 @@ Tracks the current number of Covid19 cases in each state using a public API and 
 Model: Row Entry
 | Property  | Type | Description |
 | ------------- | ------------- |-------------|
-| objectId  | Content Cell  |date when post is last updated (default field)|
+| objectId  | String  |date when post is last updated (default field)|
 | caseCount  | Number | number of active Covid19 cases|
 | updatedAt| DateTime| date when post is last updated (default field)|
 
@@ -65,12 +65,12 @@ Model: Row Entry
   
   let query = PFQuery(className:"Row entry")
 query.whereKey("objectID")
-query.order(byDescending: "")
+query.order(byDescending: "updatedAt")
 query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
    if let error = error {
       print(error.localizedDescription)
    } else if let posts = posts {
-      print("Successfully retrieved \(posts.count) posts.")
+      print("Currently, there are \(rowEntry.caseCount) active cases.")
       // TODO: Do something with posts...
    }
 }

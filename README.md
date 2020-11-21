@@ -62,7 +62,8 @@ Model: Row Entry
 
 - Country Data:
   - (Read/GET) Get the data for each country
-  
+ 
+ ```
   let query = PFQuery(className:"Row entry")
 query.whereKey("objectID")
 query.order(byDescending: "updatedAt")
@@ -74,3 +75,4 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
       // TODO: Do something with posts...
    }
 }
+```
